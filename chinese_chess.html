@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: "微軟正黑體";
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        #bigbox {
+            width: 1000px;
+            height: 1200px;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000;
+            background: #FFF;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 55px;
+        }
+
+        .box {
+            width: 12.5%;
+            height: 25%;
+            border: 1px solid #000;
+            background: #FFF;
+        }
+
+        .line {
+            width: 12.5%;
+            height: 25%;
+            border: 1px solid #000;
+            background: #FFF;
+            position: relative;
+        }
+
+        .line::before {
+            content: "";
+            width: 141.421%;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(45deg) translateX(-50%);
+            transform-origin: left top;
+        }
+
+        .line::after {
+            content: "";
+            width: 141.421%;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 152%;
+            transform: rotate(135deg) translateX(-50%);
+            transform-origin: left top;
+        }
+
+        .line2 {
+            width: 12.5%;
+            height: 25%;
+            border: 1px solid #000;
+            background: #FFF;
+            position: relative;
+        }
+
+        .line2::before {
+            content: "";
+            width: 141.421%;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 49%;
+            transform: rotate(-45deg) translateX(-50%);
+            transform-origin: left top;
+        }
+
+        .line2::after {
+            content: "";
+            width: 141.421%;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 152%;
+            transform: rotate(-135deg) translateX(-50%);
+            transform-origin: left top;
+        }
+
+        .blank {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid #000;
+            border-top: none;
+            border-bottom: none;
+            background: #FFF;
+            position: absolute;
+            top: 46.2%;
+            left: 55px;
+        }
+
+        .chesspan {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1120px;
+            height: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            z-index: 2;
+        }
+
+        .chesspan2 {
+            position: absolute;
+            top: 20.5%;
+            left: 0;
+            width: 1120px;
+            height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            z-index: 2;
+        }
+
+        .chesspan3 {
+            position: absolute;
+            top: 31%;
+            left: 0;
+            width: 1120px;
+            height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            z-index: 2;
+
+        }
+
+        .chess {
+            width: 110px;
+            height: 110px;
+            margin-right: 1%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            background-color: #FFF;
+            font-family: "標楷體";
+            font-size: 70px;
+            text-align: center;
+            line-height: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigbox">
+        <div class="chesspan">
+            <div class="chess">車</div>
+            <div class="chess">馬</div>
+            <div class="chess">象</div>
+            <div class="chess">士</div>
+            <div class="chess">將</div>
+            <div class="chess">士</div>
+            <div class="chess">象</div>
+            <div class="chess">馬</div>
+            <div class="chess">車</div>
+        </div>
+        <div class="chesspan2">
+            <div class="chess" style="margin-right:140px;">包</div>
+            <div class="chess">包</div>
+        </div>
+        <div class="chesspan3">
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+        </div>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box line"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box line2"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="blank"></div>
+        <div class="container" style="top: 50%;">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box line"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box line2"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="chesspan3" style="top: 60%;">
+            <div class="chess">兵</div>
+            <div class="chess">兵</div>
+            <div class="chess">兵</div>
+            <div class="chess">兵</div>
+            <div class="chess">兵</div>
+        </div>
+        <div class="chesspan2" style="top: 70.5%;">
+            <div class=" chess" style="margin-right:140px;">炮</div>
+            <div class="chess">炮</div>
+        </div>
+        <div class="chesspan" style="top: 91%;">
+            <div class=" chess">俥</div>
+            <div class="chess">傌</div>
+            <div class="chess">相</div>
+            <div class="chess">仕</div>
+            <div class="chess">帥</div>
+            <div class="chess">仕</div>
+            <div class="chess">相</div>
+            <div class="chess">傌</div>
+            <div class="chess">俥</div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
